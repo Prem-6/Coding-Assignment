@@ -1,0 +1,9 @@
+t=int(input())
+for i in range(t):
+    sal=int(input())
+    if sal>=1500:
+        gs=sal+500+(98/100)*sal
+        print(gs)
+    else:
+        gs=sal+(0.1*sal)+(0.9)*sal
+        print(gs)
