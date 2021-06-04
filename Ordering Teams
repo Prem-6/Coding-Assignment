@@ -1,0 +1,9 @@
+for _ in range(int(input())):
+    s1=sum(map(int,input().split()))
+    s2=sum(map(int,input().split()))
+    s3=sum(map(int,input().split()))
+    if s1==s2 or s2==s3 or s3==s1:
+        print("No")
+    else:
+        print("Yes")
+        
