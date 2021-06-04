@@ -1,0 +1,29 @@
+def isValid(arr,n):
+    if not n%2:
+        return "no"
+    
+    mid = (n+1)//2
+    i = 1 
+    
+    while(i<mid):
+        if i != arr[i-1] or arr[i-1] != arr[n-i]:
+            return "no"
+        i += 1 
+    
+    if i != arr[mid-1]:
+        return "no"
+    
+    return "yes"
+    
+        
+
+def main():
+    for _ in range(int(input())):
+        n = int(input())
+        arr = list(map(int,input().split()))
+        
+        res = isValid(arr,n)
+        print(res)
+
+if __name__ == '__main__':
+    main()
